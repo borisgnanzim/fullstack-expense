@@ -1,0 +1,42 @@
+POST http://127.0.0.1:8000/api/transactions/
+Content-Type: application/json
+
+{
+    "text": "shopping",
+    "amount": 60.00,
+    "currency": "USD"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/transactions/
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8000/api/transactions/1d38214b-fe4e-47bb-b1cb-1fb8d235ba28/
+Content-Type: application/json
+
+###
+PUT http://127.0.0.1:8000/api/transactions/1d38214b-fe4e-47bb-b1cb-1fb8d235ba28/
+Content-Type: application/json
+
+{
+    "text": "Grocery shopping at Walmart",
+    "amount": 55.00,
+    "currency": "USD"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/transactions/1d38214b-fe4e-47bb-b1cb-1fb8d235ba28/
+Content-Type: application/json
+
+###
+
+PATCH http://127.0.0.1:8000/api/transactions/1d38214b-fe4e-47bb-b1cb-1fb8d235ba28/
+Content-Type: application/json
+
+{
+    "amount": 250.00
+}
+
+###
